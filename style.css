@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: white;
+    /* border: 2px solid bisque; */
+    width: 90vw;
+    display: flex;
+    position: sticky;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+.item{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+}
+.logo{
+    width: 25vw; /*make the container of logoi.e div bigger in width or put specialized margin to achieve that look */
+    /* flex-grow: 1; */
+    /* align-self will not work here since it applies on cross axis i.e vertically for horizontally in flexbox */
+}
+
+/* Intro Box */
+
+.box{
+    /* border: 2px solid black; */
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    width: 90vw;
+}
+.box .h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    margin: 10px;
+    
+}
+.box .h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.box button{
+    background-color: rgb(102, 198, 236);
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+a:hover{
+    color:white;
+}
+
+/* cards  parent */
+
+.cards{
+    /* border: 2px solid red; */
+    display: grid;
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+    row-gap: 20px;
+}
+/* Responsive media query goes OUTSIDE of the .cards block */
+@media only screen and (max-width: 1043px){
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media only screen and (max-width: 700px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* individual card */
+
+.card{
+    
+    width: 28vw;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 2px;
+    line-height: 30px;
+    font-family: "Poppins", sans-serif;
+       
+}
+.card h5{
+    font-weight: 400;
+    font-style: normal;
+}
+.card p{
+    font-size: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+    line-height: 15px;
+}
+.card button{
+    background-color: rgb(113, 223, 49);
+    border: 0;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+footer{
+    background-color: rgb(47, 48, 46);
+    padding: 10px;
+    margin-top: 20px;
+    color: rgb(231, 226, 226);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+footer h3{
+    line-height: 40px;
+}
+li{
+    list-style: none;
+    font-size: 15px;
+}
+footer p{
+    font-size: 12px;
+}
